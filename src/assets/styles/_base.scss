@@ -1,13 +1,16 @@
 //ici se trouvent tout le css qui concerne les éléments de base html
 
+html,
 body {
   margin: 0;
-  font-family: var(
-    --font-family
-  ); // on utilise la variable --font-family définie dans _variables.scss
+  padding: 0;
+  width: 100%;
+  overflow-x: hidden;
+  font-family: var(--font-family);
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   color: var(--text-color);
+  background-color: var(--gray-2);
 }
 
 h1,
