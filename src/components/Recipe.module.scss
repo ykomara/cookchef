@@ -1,0 +1,39 @@
+.recipe {
+  border-radius: 20px;
+  height: 400px;
+  &:hover {
+    img {
+      transform: scale(1.1);
+    }
+    .recipeTitle {
+      color: var(--primary);
+    }
+  }
+}
+
+.imageContainer {
+  height: 300px;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+  overflow: hidden;
+  cursor: pointer;
+  img {
+    transition: transform 0.5s ease;
+  }
+}
+
+.imageContainer img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.recipeTitle {
+  transition: 0.5s color ease;
+  border: 1px solid var(--gray-2);
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+  height: 50px;
+  cursor: pointer;
+}
