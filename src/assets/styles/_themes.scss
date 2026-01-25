@@ -1,0 +1,21 @@
+.btn {
+  padding: 5px 15px;
+  border-radius: 20px;
+  cursor: pointer;
+  transition: 0.3s;
+  &:hover {
+    opacity: 0.9;
+  }
+}
+
+.btn-primary {
+  background-color: var(--primary);
+  color: white;
+  border: 5px solid var(--primary);
+}
+
+.btn-reverse-primary {
+  background-color: white;
+  color: var(--primary);
+  border: 1.5px solid var(--primary);
+}
