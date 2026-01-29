@@ -9,7 +9,7 @@ export default function Content() {
       <div className={` ${styles.contentCard} card p-10`}>
         <div className={`${styles.grid} `}>
           {recipes.map((r) => (
-            <Recipe title={r.title} image={r.Image} />
+            <Recipe key={r._id} title={r.title} image={r.image} />
           ))}
         </div>
       </div>
