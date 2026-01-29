@@ -1,13 +1,31 @@
+@use "../assets/styles/mixins" as mixin;
 .grid {
   display: grid;
   place-content: center;
+  //les deux lignes suivantes permettent de définir un nombre fixe de colonnes et de lignes avec une taille fixe
   grid-template-columns: repeat(3, 200px);
   grid-auto-columns: repeat(3, 200px);
   gap: 20px;
   justify-items: stretch;
   justify-content: center;
+  @include mixin.lg {
+    //les deux lignes suivantes permettent de définir un nombre fixe de colonnes et de lignes avec une taille fixe
+    grid-template-columns: repeat(2, 200px);
+    grid-auto-columns: repeat(2, 200px);
+  }
+  @include mixin.md-lt {
+    //les deux lignes suivantes permettent de définir un nombre fixe de colonnes et de lignes avec une taille fixe
+    grid-template-columns: repeat(1, 200px);
+    grid-auto-columns: repeat(1, 200px);
+  }
+  @include mixin.xs {
+    //les deux lignes suivantes permettent de définir un nombre fixe de colonnes et de lignes avec une taille fixe
+    grid-template-columns: repeat(1, 150px);
+    grid-auto-columns: repeat(1, 150px);
+  }
 }
 
 .contentCard {
-  width: 660px;
+  max-width: 1130px;
+  width: 100%;
 }

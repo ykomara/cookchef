@@ -6,7 +6,7 @@ export default function Content() {
   return (
     <div className="flex-fill container p-20">
       <h1 className="my-30 ">Découvrez nos nouvelles recettes</h1>
-      <div className={` ${styles.contentCard} card p-10`}>
+      <div className={` ${styles.contentCard} card p-10 br`}>
         <div className={`${styles.grid} `}>
           {recipes.map((r) => (
             <Recipe key={r._id} title={r.title} image={r.image} />
