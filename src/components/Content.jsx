@@ -1,17 +1,16 @@
 import styles from "./Content.module.scss";
 import Recipe from "./Recipe";
+import { data } from "../data/recipes";
 export default function Content() {
+  const recipes = data;
   return (
     <div className="flex-fill container p-20">
       <h1 className="my-30 ">Découvrez nos nouvelles recettes</h1>
       <div className={` ${styles.contentCard} card p-10`}>
         <div className={`${styles.grid} `}>
-          <Recipe />
-          <Recipe />
-          <Recipe />
-          <Recipe />
-          <Recipe />
-          <Recipe />
+          {recipes.map((r) => (
+            <Recipe title={r.title} image={r.Image} />
+          ))}
         </div>
       </div>
     </div>
